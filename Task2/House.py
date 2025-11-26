@@ -16,7 +16,7 @@ print("Head of Dataset: ")
 print(house_pd.head())
 
 print("Info of the Dataset: ")
-print(house_pd.info)
+print(house_pd.info())
 
 print("Describtion of the dataset: ")
 print(house_pd.describe())
