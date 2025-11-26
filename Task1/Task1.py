@@ -2,7 +2,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-path_file = "Iris DatasSet\\Iris.csv"
+path_file = "Task1\\Iris.csv"
 iris_df = pd.read_csv(path_file)
 print(iris_df)
 
