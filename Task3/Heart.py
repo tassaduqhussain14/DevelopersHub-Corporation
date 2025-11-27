@@ -96,6 +96,8 @@ print(confusion_matrix(y_test,y_preds))
 result = pd.DataFrame({"Actual" : y_test, "Predicted" : y_preds})
 print(f"Actual vs Predicted: \n{result}")
 
+#Plot of confusing Matrix
+
 cm = confusion_matrix(y_test, y_preds)
 plt.figure(figsize=(6,4))
 sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')

@@ -84,7 +84,7 @@ result = pd.DataFrame({"Actual" : y_test, "Predicted" : y_preds})
 result["Predicted"] = result["Predicted"].apply(lambda x: int(x))
 print(f"Actual vs Predicted: \n{result}")
 
-
+#plot of actual and predicted result
 plt.figure(figsize=(10,6))
 sns.scatterplot(x=result["Actual"], y=result["Predicted"])
 plt.plot([result["Actual"].min(), result["Actual"].max()], 
@@ -108,3 +108,4 @@ actual_minus_predicted = sum((y_test - y_preds)**2)
 actual_minus_actual_mean = sum((y_test - y_test.mean())**2)
 r2 = 1 - actual_minus_predicted/actual_minus_actual_mean
 print('R²:', r2)     
+
